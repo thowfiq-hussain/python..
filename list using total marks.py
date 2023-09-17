@@ -8,5 +8,13 @@ average_marks = total_marks / num_subjects
 
 print("Total marks:", total_marks)
 print("Average marks:", average_marks)
+if average_marks > 70:
+    print("Grade: First Class")
+elif average_marks > 60:
+    print("Grade: Second Class")
+elif average_marks >= 50:
+    print("Grade: Third Class")
+else:
+    print("Grade: Fail")
 
 
