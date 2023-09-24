@@ -9,7 +9,7 @@ average_marks = total_marks / subjects
 print("Total Marks:", total_marks)
 print("Average Marks:", average_marks)
 failed_subjects = []
-for subject, mark in marks.items():  #.items() method is used to return the list with all dictionary keys with values...
+for subject, mark in marks.items():  #.items() nested tuple
     if mark < 50:
         failed_subjects.append(subject)
         if len(failed_subjects) > 0:
