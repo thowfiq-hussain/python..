@@ -1,0 +1,9 @@
+emp_name=input("enter the names(comma-separated):").split(",")
+phone_sales={}
+for name in emp_name:
+    sales=input("enter the monthly sales"+name+"(comma-separated)").split(",")
+    phone_sales[name]=[int(sale) for sale in sales]
+    sorted_emp=sorted(phone_sales.keys())
+for emp in sorted_emp:
+    sorted_sales=sorted(phone_sales[emp])
+    print(emp + "s sales:", sorted_sales)
